@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Matrix 1 dimensions -->
+        <EditText
+            android:id="@+id/matrix1_dims"
+            android:hint="Enter Matrix 1 dimensions (rows cols, e.g., 2 2)"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <!-- Matrix 1 elements -->
+        <EditText
+            android:id="@+id/matrix1_input"
+            android:hint="Enter Matrix 1 elements (rows separated by ';', columns by ',')"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <!-- Matrix 2 dimensions -->
+        <EditText
+            android:id="@+id/matrix2_dims"
+            android:hint="Enter Matrix 2 dimensions (rows cols, e.g., 2 2)"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <!-- Matrix 2 elements -->
+        <EditText
+            android:id="@+id/matrix2_input"
+            android:hint="Enter Matrix 2 elements (rows separated by ';', columns by ',')"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/addButton"
+            android:text="Add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/subtractButton"
+            android:text="Subtract"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/multiplyButton"
+            android:text="Multiply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/divideButton"
+            android:text="Divide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Result -->
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+</ScrollView>
