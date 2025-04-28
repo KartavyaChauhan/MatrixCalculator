@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
 
@@ -69,6 +70,13 @@ class MainActivity : AppCompatActivity() {
         matrix1Input = findViewById(R.id.matrix1_input)
         matrix2Input = findViewById(R.id.matrix2_input)
         resultText = findViewById(R.id.resultText)
+
+        findViewById<Button>(R.id.backButton).setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+            startActivity(intent)
+            finish() // Close this Activity
+        }
 
         findViewById<Button>(R.id.addButton).setOnClickListener {
             performOperation("add")
